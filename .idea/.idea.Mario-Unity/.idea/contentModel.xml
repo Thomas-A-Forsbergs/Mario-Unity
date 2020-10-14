@@ -16,6 +16,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CameraFollow.cs" t="Include" />
           <e p="FPSCounter.cs" t="Include" />
           <e p="Platformer.cs" t="Include" />
         </e>
