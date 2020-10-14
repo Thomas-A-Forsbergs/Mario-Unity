@@ -6,34 +6,72 @@ using UnityEngine.EventSystems;
 
 public class Platformer : MonoBehaviour {
     Rigidbody2D rbPlayer;
-    public float speedPlayer = 0;
-    public float jumpForcePlayer = 0;
-    
+    public float speedPlayer = 0f;
+    public float jumpForcePlayer = 0f;
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
+    public int defaultAdditonalJumps = 1;
+    int additionalJumps;
+
+    bool isGroundedPlayer = false;
+    public Transform isGroundedChecker;
+    public float checkGroundRadius;
+    public float rememberGroundedFor;
+    float lastTimeGrounded;
+    public LayerMask groundLayer;
+    public LayerMask wallLayer;
+
     // Start is called before the first frame update
     void Start() {
         rbPlayer = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         MovePlayer();
-        JumpForcePlayer();  
+        JumpForcePlayer();
+        CheckIfGrounded();
+        ClassicJumpPlayer();
     }
 
     void FixedUpdate() {
-        
     }
 
     void MovePlayer() {
         float x = Input.GetAxisRaw("Horizontal");
         float moveBy = x * speedPlayer;
-        rbPlayer.velocity = new Vector2(moveBy,rbPlayer.velocity.y);
+        rbPlayer.velocity = new Vector2(moveBy, rbPlayer.velocity.y);
     }
 
     void JumpForcePlayer() {
-        if (Input.GetKeyDown(KeyCode.Space) && rbPlayer.position.y<0.1) {
+        if (Input.GetKeyDown(KeyCode.Space) && (isGroundedPlayer ||
+                                                Time.time - lastTimeGrounded <= rememberGroundedFor ||
+                                                additionalJumps > 0)) {
             rbPlayer.velocity = new Vector2(rbPlayer.velocity.x, jumpForcePlayer);
+            additionalJumps--;
+        }
+    }
+
+    void ClassicJumpPlayer() {
+        if (rbPlayer.velocity.y < 0) {
+            rbPlayer.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
+        } else if (rbPlayer.velocity.y > 0 && !Input.GetKey(KeyCode.Space)) {
+            rbPlayer.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
+    void CheckIfGrounded() {
+        Collider2D collider2D = Physics2D.OverlapCircle(isGroundedChecker.position,
+                                                        checkGroundRadius, groundLayer);
+
+        if (collider2D != null) {
+            isGroundedPlayer = true;
+            additionalJumps = defaultAdditonalJumps;
+        } else {
+            if (isGroundedPlayer) {
+                lastTimeGrounded = Time.time;
+            }
+            isGroundedPlayer = false;
         }
     }
 }
