@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class Platformer : MonoBehaviour {
     Rigidbody2D rbPlayer;
+    SpriteRenderer srPlayer;
+
     public float speedPlayer = 0f;
     public float jumpForcePlayer = 0f;
     public float fallMultiplier = 2.5f;
@@ -14,7 +16,8 @@ public class Platformer : MonoBehaviour {
     int additionalJumps;
 
     bool isGroundedPlayer = false;
-    public Transform isGroundedChecker;
+    public Transform isGroundedChecker1;
+    public Transform isGroundedChecker2;
     public float checkGroundRadius;
     public float rememberGroundedFor;
     float lastTimeGrounded;
@@ -24,6 +27,7 @@ public class Platformer : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         rbPlayer = GetComponent<Rigidbody2D>();
+        srPlayer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -39,6 +43,12 @@ public class Platformer : MonoBehaviour {
 
     void MovePlayer() {
         float x = Input.GetAxisRaw("Horizontal");
+        // if (x == 1) {
+        //     SpriteRenderer.flipX = false;
+        // } else if (x == -1) {
+        //     SpriteRenderer.flipX = true;
+        // }
+
         float moveBy = x * speedPlayer;
         rbPlayer.velocity = new Vector2(moveBy, rbPlayer.velocity.y);
     }
@@ -61,8 +71,8 @@ public class Platformer : MonoBehaviour {
     }
 
     void CheckIfGrounded() {
-        Collider2D collider2D = Physics2D.OverlapCircle(isGroundedChecker.position,
-                                                        checkGroundRadius, groundLayer);
+        Collider2D collider2D = Physics2D.OverlapArea(isGroundedChecker1.position,
+            isGroundedChecker2.position, groundLayer);
 
         if (collider2D != null) {
             isGroundedPlayer = true;
@@ -71,6 +81,7 @@ public class Platformer : MonoBehaviour {
             if (isGroundedPlayer) {
                 lastTimeGrounded = Time.time;
             }
+
             isGroundedPlayer = false;
         }
     }
