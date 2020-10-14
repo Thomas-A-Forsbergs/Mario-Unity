@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Platformer : MonoBehaviour {
     Rigidbody2D rbPlayer;
@@ -14,6 +11,8 @@ public class Platformer : MonoBehaviour {
     public float lowJumpMultiplier = 2f;
     public int defaultAdditonalJumps = 1;
     int additionalJumps;
+    public int livesPlayer = 1;
+    bool isAlivePlayer = true;
 
     bool isGroundedPlayer = false;
     public Transform isGroundedChecker1;
@@ -36,6 +35,7 @@ public class Platformer : MonoBehaviour {
         JumpForcePlayer();
         CheckIfGrounded();
         ClassicJumpPlayer();
+        IsAlivePlayer();
     }
 
     void MovePlayer() {
@@ -80,6 +80,15 @@ public class Platformer : MonoBehaviour {
             }
 
             isGroundedPlayer = false;
+        }
+    }
+
+    void IsAlivePlayer() {
+        if (isAlivePlayer == true && rbPlayer.position.y > -5) {
+            isAlivePlayer = true;
+        } else {
+            isAlivePlayer = false;
+            SceneManager.LoadScene("Defeat");
         }
     }
 }

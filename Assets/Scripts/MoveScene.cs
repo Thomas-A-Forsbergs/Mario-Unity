@@ -12,9 +12,11 @@ public class MoveScene : MonoBehaviour {
     private void buttonCallBack() {
         Debug.Log("Clicked: " + moveScene.name);
         var scene = SceneManager.GetActiveScene().name;
-        if (scene=="2D") {
-            SceneManager.LoadScene("Victory");
+        if (scene=="Start") {
+            SceneManager.LoadScene("2D");
         } else if (scene=="Victory") {
+            SceneManager.LoadScene("2D");
+        } else if (scene=="Defeat") {
             SceneManager.LoadScene("2D");
         }
     }
