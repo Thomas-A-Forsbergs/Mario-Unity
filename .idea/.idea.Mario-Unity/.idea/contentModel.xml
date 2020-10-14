@@ -17,8 +17,12 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CameraFollow.cs" t="Include" />
+          <e p="Collect.cs" t="Include" />
           <e p="FPSCounter.cs" t="Include" />
+          <e p="MoveScene.cs" t="Include" />
           <e p="Platformer.cs" t="Include" />
+          <e p="ResetGame.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
         </e>
       </e>
       <e p="Mario-Unity.sln" t="IncludeFlat" />

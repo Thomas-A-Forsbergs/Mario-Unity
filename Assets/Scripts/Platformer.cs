@@ -38,9 +38,6 @@ public class Platformer : MonoBehaviour {
         ClassicJumpPlayer();
     }
 
-    void FixedUpdate() {
-    }
-
     void MovePlayer() {
         float x = Input.GetAxisRaw("Horizontal");
         // if (x == 1) {

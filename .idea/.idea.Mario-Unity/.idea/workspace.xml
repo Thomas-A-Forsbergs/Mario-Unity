@@ -12,13 +12,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ResetGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveScene.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Platformer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RestartGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoveScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Platformer.cs" />
       </list>
     </option>
   </component>
@@ -61,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602667592653</updated>
-      <workItem from="1602667598768" duration="8712000" />
+      <workItem from="1602667598768" duration="16178000" />
     </task>
     <servers />
   </component>
@@ -74,9 +82,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1157" y="227" key="RiderGenerateDialog" timestamp="1602674551939">
+    <state x="1157" y="227" key="RiderGenerateDialog" timestamp="1602686261288">
       <screen x="0" y="0" width="1920" height="999" />
     </state>
-    <state x="1157" y="227" key="RiderGenerateDialog/0.0.1920.999@0.0.1920.999" timestamp="1602674551939" />
+    <state x="1157" y="227" key="RiderGenerateDialog/0.0.1920.999@0.0.1920.999" timestamp="1602686261288" />
+    <state x="1058" y="220" width="672" height="678" key="search.everywhere.popup" timestamp="1602686286771">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state x="1058" y="220" width="672" height="678" key="search.everywhere.popup/0.0.1920.999@0.0.1920.999" timestamp="1602686286771" />
   </component>
 </project>
