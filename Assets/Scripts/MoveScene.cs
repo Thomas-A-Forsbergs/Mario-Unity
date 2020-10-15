@@ -22,9 +22,11 @@ public class MoveScene : MonoBehaviour {
         if (scene == "Start") {
             SceneManager.LoadScene(1);
         } else if (scene == "Victory") {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         } else if (scene == "Defeat") {
             SceneManager.LoadScene(1);
+        } else if (scene == "Credits") {
+            SceneManager.LoadScene(0);
         }
     }
 
