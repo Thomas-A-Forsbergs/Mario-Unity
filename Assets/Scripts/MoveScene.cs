@@ -8,15 +8,15 @@ public class MoveScene : MonoBehaviour {
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
-            buttonCallBack();
+            RestartButton();
         }
     }
 
     void OnEnable() {
-        moveScene.onClick.AddListener(() => buttonCallBack());
+        moveScene.onClick.AddListener(() => RestartButton());
     }
 
-    private void buttonCallBack() {
+    private void RestartButton() {
         //Debug.Log("Clicked: " + moveScene.name);
         var scene = SceneManager.GetActiveScene().name;
         if (scene == "Start") {

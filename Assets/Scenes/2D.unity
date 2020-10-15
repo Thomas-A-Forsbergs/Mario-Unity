@@ -753,7 +753,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 405698025}
+  startTime: 30
   livesText: {fileID: 1503875475}
+  playerLives: 0
 --- !u!4 &714212667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 559960411650657436, guid: cdbd513f9f4547d489bb0c961a6a72b3, type: 3}
@@ -1429,7 +1431,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 405698025}
+  startTime: 0
   livesText: {fileID: 1503875475}
+  playerLives: 3
 --- !u!114 &1503875475
 MonoBehaviour:
   m_ObjectHideFlags: 0

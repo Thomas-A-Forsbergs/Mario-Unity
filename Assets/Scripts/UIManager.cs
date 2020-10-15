@@ -1,22 +1,48 @@
-﻿using JetBrains.Annotations;
+﻿using System;
+using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
     [NotNull] public Text timeText;
-    float startTime;
+    public float startTime;
+    float currentTime;
+    float endTime;
     
     [NotNull] public Text livesText;
-    int playerLives = 0;
+    public int playerLives = 0;
+    bool isPlayerAlive = true;
 
     void Start() {
-        this.startTime = Time.time;
-        this.playerLives = 1;
+        this.startTime = 20;
+        this.playerLives = 3;
     }
 
-    // Update is called once per frame
     void Update() {
-        this.timeText.text = (Time.time - this.startTime).ToString("Time: 0.000s");
-        this.livesText.text = playerLives.ToString("Lives: 0");
+        DisplayTime();
+        DisplayLives();
+        IsPlayerAlive();
+    }
+
+    void DisplayLives() {
+        this.livesText.text = "Lives: " + playerLives.ToString("0");
+    }
+
+    void DisplayTime() {
+        this.timeText.text = "Time: " + (this.startTime - Time.timeSinceLevelLoad).ToString("0.000s");
+
+        if (startTime - Time.timeSinceLevelLoad <= 0) {
+            SceneManager.LoadScene("Defeat");
+        }
+    }
+    
+    void IsPlayerAlive() {
+        if (isPlayerAlive == true && playerLives > 0) {
+            isPlayerAlive = true;
+        } else {
+            isPlayerAlive = false;
+            SceneManager.LoadScene("Defeat");
+        }
     }
 }
