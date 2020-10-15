@@ -6,24 +6,21 @@ public class PlayerMovementForce : MonoBehaviour {
 
     public float movementAcceleration = 10f;
     public float maxSpeed = 1f;
-    public float jumpAcceleration = 100f;
 
-    public float playerSpeed = 1f;
-
-    public float playerJumpForce = 1f;
+    public float jumpForce = 100f;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
     public int defaultAdditonalJumps = 1;
     int additionalJumps;
     bool isPlayerGrounded = false;
-    public Transform isGroundedChecker1;
-    public Transform isGroundedChecker2;
+    public Transform isGroundedCheckerLeft;
+    public Transform isGroundedCheckerRight;
     public float checkGroundRadius;
     public float rememberGroundedFor;
     float lastTimeGrounded;
     public LayerMask groundLayer;
+
     
-    public int playerLives = 1;
     bool isPlayerAlive = true;
 
     void Start() {
@@ -33,6 +30,8 @@ public class PlayerMovementForce : MonoBehaviour {
     void Update() {
         Movement();
         Jump();
+        CheckIfGrounded();
+        IsPlayerAlive();
     }
 
     void FixedUpdate() {
@@ -50,32 +49,45 @@ public class PlayerMovementForce : MonoBehaviour {
     }
 
     void Jump() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Vector2 jumpForce = new Vector2(0, jumpAcceleration);
+        if (Input.GetKeyDown(KeyCode.Space) && (isPlayerGrounded ||
+                                                Time.time - lastTimeGrounded <= rememberGroundedFor ||
+                                                additionalJumps > 0)) {
+            Vector2 jumpForce = new Vector2(0, this.jumpForce);
             playerRB.AddForce(jumpForce);
+            additionalJumps--;
         }
     }
 
-    // void OnCollisionEnter2D(Collision2D collision) {
-    //     if (CollisionIsWithGround(collision)) {
-    //         isPlayerGrounded = true;
-    //     }
-    // }
-    //
-    // void OnCollisionExit2D(Collision2D collision) {
-    //     if (!CollisionIsWithGround(collision)) {
-    //         isPlayerGrounded = false;
-    //     }
-    // }
-    //
-    // bool CollisionIsWithGround(Collider2D collision) {
-    //     bool isWithGround = false;
-    //     foreach (ContactPoint2D c in collision.contacts) {
-    //         Vector2 collisionDirectionVector = c.point - playerRB.position;
-    //         if (collisionDirectionVector.y < 0) {
-    //             isWithGround = true;
-    //         }
-    //     }
-    //     return isWithGround;
-    // }
+    void PlayerClassicJump() {
+        if (playerRB.velocity.y < 0) {
+            playerRB.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
+        } else if (playerRB.velocity.y > 0 && !Input.GetKey(KeyCode.Space)) {
+            playerRB.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
+    void CheckIfGrounded() {
+        Collider2D collider2D = Physics2D.OverlapArea(isGroundedCheckerLeft.position,
+            isGroundedCheckerRight.position, groundLayer);
+
+        if (collider2D != null) {
+            isPlayerGrounded = true;
+            additionalJumps = defaultAdditonalJumps;
+        } else {
+            if (isPlayerGrounded) {
+                lastTimeGrounded = Time.time;
+            }
+
+            isPlayerGrounded = false;
+        }
+    }
+
+    void IsPlayerAlive() {
+        if (isPlayerAlive == true && playerRB.position.y > -5) {
+            isPlayerAlive = true;
+        } else {
+            isPlayerAlive = false;
+            SceneManager.LoadScene("Defeat");
+        }
+    }
 }

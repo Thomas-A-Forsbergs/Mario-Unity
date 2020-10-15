@@ -12,7 +12,7 @@ public class Collect : MonoBehaviour {
         SceneManager.LoadScene("Victory");
         //scoreText.text = "Evidence collected: " + scoreCount;
         //scoreText.text = "Level is completed!\nAll evidence collected.";
-        
+
         // startButton.SetBool("isHidden", true);
     }
 }

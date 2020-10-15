@@ -15,15 +15,15 @@ public class MoveScene : MonoBehaviour {
     void OnEnable() {
         moveScene.onClick.AddListener(() => buttonCallBack());
     }
-    
+
     private void buttonCallBack() {
         //Debug.Log("Clicked: " + moveScene.name);
         var scene = SceneManager.GetActiveScene().name;
-        if (scene=="Start") {
+        if (scene == "Start") {
             SceneManager.LoadScene(1);
-        } else if (scene=="Victory") {
+        } else if (scene == "Victory") {
             SceneManager.LoadScene(1);
-        } else if (scene=="Defeat") {
+        } else if (scene == "Defeat") {
             SceneManager.LoadScene(1);
         }
     }

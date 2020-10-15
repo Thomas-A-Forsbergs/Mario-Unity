@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="61c2a819-bb5d-4f37-bc65-cc049b736a5c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,21 +25,24 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovementForce.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RestartGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Platformer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementVelocity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementVelocity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementForce.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
       </list>
     </option>
   </component>
@@ -40,9 +52,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -63,10 +78,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10940">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="10940" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -83,7 +98,7 @@
       <updated>1602667592653</updated>
       <workItem from="1602667598768" duration="16178000" />
       <workItem from="1602691778280" duration="1881000" />
-      <workItem from="1602749802198" duration="9584000" />
+      <workItem from="1602749802198" duration="16645000" />
     </task>
     <servers />
   </component>
@@ -92,14 +107,93 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1157" y="227" key="RiderGenerateDialog" timestamp="1602754975403">
+    <state width="1877" height="358" key="GridCell.Tab.0.bottom" timestamp="1602771305210">
       <screen x="0" y="0" width="1920" height="999" />
     </state>
-    <state x="1157" y="227" key="RiderGenerateDialog/0.0.1920.999@0.0.1920.999" timestamp="1602754975403" />
+    <state width="1877" height="358" key="GridCell.Tab.0.bottom/0.0.1920.999@0.0.1920.999" timestamp="1602771305210" />
+    <state width="1877" height="358" key="GridCell.Tab.0.center" timestamp="1602771305210">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.0.center/0.0.1920.999@0.0.1920.999" timestamp="1602771305210" />
+    <state width="1877" height="358" key="GridCell.Tab.0.left" timestamp="1602771305210">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.0.left/0.0.1920.999@0.0.1920.999" timestamp="1602771305210" />
+    <state width="1877" height="358" key="GridCell.Tab.0.right" timestamp="1602771305210">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.0.right/0.0.1920.999@0.0.1920.999" timestamp="1602771305210" />
+    <state width="1877" height="358" key="GridCell.Tab.1.bottom" timestamp="1602771295354">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.1.bottom/0.0.1920.999@0.0.1920.999" timestamp="1602771295354" />
+    <state width="1877" height="358" key="GridCell.Tab.1.center" timestamp="1602771295353">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.1.center/0.0.1920.999@0.0.1920.999" timestamp="1602771295353" />
+    <state width="1877" height="358" key="GridCell.Tab.1.left" timestamp="1602771295353">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.1.left/0.0.1920.999@0.0.1920.999" timestamp="1602771295353" />
+    <state width="1877" height="358" key="GridCell.Tab.1.right" timestamp="1602771295353">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.1.right/0.0.1920.999@0.0.1920.999" timestamp="1602771295353" />
+    <state width="1877" height="358" key="GridCell.Tab.2.bottom" timestamp="1602771514714">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.2.bottom/0.0.1920.999@0.0.1920.999" timestamp="1602771514714" />
+    <state width="1877" height="358" key="GridCell.Tab.2.center" timestamp="1602771514714">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.2.center/0.0.1920.999@0.0.1920.999" timestamp="1602771514714" />
+    <state width="1877" height="358" key="GridCell.Tab.2.left" timestamp="1602771514714">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.2.left/0.0.1920.999@0.0.1920.999" timestamp="1602771514714" />
+    <state width="1877" height="358" key="GridCell.Tab.2.right" timestamp="1602771514714">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.2.right/0.0.1920.999@0.0.1920.999" timestamp="1602771514714" />
+    <state width="1877" height="358" key="GridCell.Tab.3.bottom" timestamp="1602771288918">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.3.bottom/0.0.1920.999@0.0.1920.999" timestamp="1602771288918" />
+    <state width="1877" height="358" key="GridCell.Tab.3.center" timestamp="1602771288918">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.3.center/0.0.1920.999@0.0.1920.999" timestamp="1602771288918" />
+    <state width="1877" height="358" key="GridCell.Tab.3.left" timestamp="1602771288917">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.3.left/0.0.1920.999@0.0.1920.999" timestamp="1602771288917" />
+    <state width="1877" height="358" key="GridCell.Tab.3.right" timestamp="1602771288918">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state width="1877" height="358" key="GridCell.Tab.3.right/0.0.1920.999@0.0.1920.999" timestamp="1602771288918" />
+    <state x="1157" y="227" key="RiderGenerateDialog" timestamp="1602770848405">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state x="1157" y="227" key="RiderGenerateDialog/0.0.1920.999@0.0.1920.999" timestamp="1602770848405" />
+    <state x="461" y="144" key="SettingsEditor" timestamp="1602771105451">
+      <screen x="0" y="0" width="1920" height="999" />
+    </state>
+    <state x="461" y="144" key="SettingsEditor/0.0.1920.999@0.0.1920.999" timestamp="1602771105451" />
     <state x="1058" y="220" width="672" height="678" key="search.everywhere.popup" timestamp="1602686286771">
       <screen x="0" y="0" width="1920" height="999" />
     </state>
