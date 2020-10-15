@@ -20,7 +20,8 @@
           <e p="Collect.cs" t="Include" />
           <e p="FPSCounter.cs" t="Include" />
           <e p="MoveScene.cs" t="Include" />
-          <e p="Platformer.cs" t="Include" />
+          <e p="PlayerMovementForce.cs" t="Include" />
+          <e p="PlayerMovementVelocity.cs" t="Include" />
           <e p="ResetGame.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
         </e>

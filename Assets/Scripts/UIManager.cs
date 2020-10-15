@@ -1,34 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
-{
+public class UIManager : MonoBehaviour {
+    public Text timeText;
+    float startTime = 0f;
     
-    public Animator startButton;
-    public Animator settingsButton;
-    public Animator dialog;
-
-    public void StartGame() 
-    {
-        //SceneManager.LoadScene("Main");
-    }
-
-    public void OpenSettings() 
-    {
-        startButton.SetBool("isHidden", true);
-        settingsButton.SetBool("isHidden", true);
-        dialog.SetBool("isHidden", false);
-    }
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start() {
+        this.startTime = Time.time;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update() {
+        this.timeText.text = (Time.time - this.startTime).ToString("Time: 0.000s");
     }
 }
