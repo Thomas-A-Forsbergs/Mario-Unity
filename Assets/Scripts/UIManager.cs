@@ -1,5 +1,4 @@
-﻿using System;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,7 +8,7 @@ public class UIManager : MonoBehaviour {
     public float startTime;
     float currentTime;
     float endTime;
-    
+
     [NotNull] public Text livesText;
     public int playerLives = 0;
     bool isPlayerAlive = true;
@@ -36,7 +35,7 @@ public class UIManager : MonoBehaviour {
             SceneManager.LoadScene("Defeat");
         }
     }
-    
+
     void IsPlayerAlive() {
         if (isPlayerAlive == true && playerLives > 0) {
             isPlayerAlive = true;

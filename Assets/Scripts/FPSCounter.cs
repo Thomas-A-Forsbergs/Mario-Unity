@@ -10,12 +10,10 @@ public class FPSCounter : MonoBehaviour {
     float minFPS = Mathf.Infinity;
     float maxFPS = 0f;
 
-    // Start is called before the first frame update
     void Start() {
         Application.targetFrameRate = 144;
     }
 
-    // Update is called once per frame
     void Update() {
         //var fps = 0.001f * Time.unscaledDeltaTime;
         var fps = 1 / Time.unscaledDeltaTime;

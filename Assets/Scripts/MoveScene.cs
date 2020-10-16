@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -17,7 +16,6 @@ public class MoveScene : MonoBehaviour {
     }
 
     private void RestartButton() {
-        //Debug.Log("Clicked: " + moveScene.name);
         var scene = SceneManager.GetActiveScene().name;
         if (scene == "Start") {
             SceneManager.LoadScene(1);

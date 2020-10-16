@@ -14,7 +14,7 @@ public class Collect : MonoBehaviour {
         } else if (scene == "Level02") {
             SceneManager.LoadScene("Credits");
         }
-        
+
         //scoreCount++;
         //scoreText.text = "Evidence collected: " + scoreCount;
         //scoreText.text = "Level is completed!\nAll evidence collected.";
