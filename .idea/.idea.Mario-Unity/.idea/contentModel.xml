@@ -18,6 +18,8 @@
         <e p="Scripts" t="Include">
           <e p="CameraFollow.cs" t="Include" />
           <e p="Collect.cs" t="Include" />
+          <e p="EnemyMobile.cs" t="Include" />
+          <e p="EnemyStationary.cs" t="Include" />
           <e p="FPSCounter.cs" t="Include" />
           <e p="MoveScene.cs" t="Include" />
           <e p="PlayerMovementForce.cs" t="Include" />

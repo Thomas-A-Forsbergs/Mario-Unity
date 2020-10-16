@@ -83,7 +83,7 @@ public class PlayerMovementForce : MonoBehaviour {
     }
 
     void IsPlayerAlive() {
-        if (isPlayerAlive == true && playerRB.position.y > -5) {
+        if (isPlayerAlive == true && playerRB.position.y >= -5) {
             isPlayerAlive = true;
         } else {
             isPlayerAlive = false;

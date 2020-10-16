@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour {
     }
 
     void DisplayTime() {
-        this.timeText.text = "Time: " + (this.startTime - Time.timeSinceLevelLoad).ToString("0.000s");
+        this.timeText.text = "Time: " + (this.startTime - Time.timeSinceLevelLoad).ToString("0s");
 
         if (startTime - Time.timeSinceLevelLoad <= 0) {
             SceneManager.LoadScene("Defeat");

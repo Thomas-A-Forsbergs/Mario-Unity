@@ -25,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovementForce.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyMobile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveScene.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -35,12 +36,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Platformer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementVelocity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FPSCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementForce.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Collect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FPSCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyStationary.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMobile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementForce.cs" />
       </list>
     </option>
   </component>
@@ -100,7 +103,7 @@
       <workItem from="1602667598768" duration="16178000" />
       <workItem from="1602691778280" duration="1881000" />
       <workItem from="1602749802198" duration="25118000" />
-      <workItem from="1602838942755" duration="416000" />
+      <workItem from="1602838942755" duration="2999000" />
     </task>
     <servers />
   </component>
