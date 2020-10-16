@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3318764175232347446}
   - component: {fileID: 3318764175232347445}
   - component: {fileID: 3318764175232347444}
-  - component: {fileID: 3318764175232347443}
   - component: {fileID: 3318764175232347442}
   m_Layer: 0
   m_Name: PlayerBody
@@ -135,31 +134,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3318764175232347443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 559960411650657432, guid: cdbd513f9f4547d489bb0c961a6a72b3, type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3318764175232347441}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e7a3213ac406c84588fbf5bc8e0ed86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSpeed: 4
-  playerJumpForce: 6
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
-  defaultAdditonalJumps: 1
-  isGroundedChecker1: {fileID: 3318764175808891517}
-  isGroundedChecker2: {fileID: 3318764175306294253}
-  checkGroundRadius: 0.05
-  rememberGroundedFor: 0.1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerLives: 3
 --- !u!114 &3318764175232347442
 MonoBehaviour:
   m_ObjectHideFlags: 0

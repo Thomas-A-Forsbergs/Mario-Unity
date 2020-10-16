@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour {
     [NotNull] public Text timeText;
     public float startTime;
-    float currentTime;
-    float endTime;
 
     [NotNull] public Text livesText;
     public int playerLives = 0;
@@ -21,7 +19,7 @@ public class UIManager : MonoBehaviour {
     void Update() {
         DisplayTime();
         DisplayLives();
-        IsPlayerAlive();
+        IfTimerIsZeroPlayerIsDefeated();
     }
 
     void DisplayLives() {
@@ -30,17 +28,10 @@ public class UIManager : MonoBehaviour {
 
     void DisplayTime() {
         this.timeText.text = "Time: " + (this.startTime - Time.timeSinceLevelLoad).ToString("0s");
-
-        if (startTime - Time.timeSinceLevelLoad <= 0) {
-            SceneManager.LoadScene("Defeat");
-        }
     }
 
-    void IsPlayerAlive() {
-        if (isPlayerAlive == true && playerLives > 0) {
-            isPlayerAlive = true;
-        } else {
-            isPlayerAlive = false;
+    void IfTimerIsZeroPlayerIsDefeated() {
+        if (startTime - Time.timeSinceLevelLoad <= 0) {
             SceneManager.LoadScene("Defeat");
         }
     }

@@ -16,16 +16,18 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CameraFollow.cs" t="Include" />
-          <e p="Collect.cs" t="Include" />
+          <e p="CameraFollowPlayer.cs" t="Include" />
           <e p="EnemyMobile.cs" t="Include" />
           <e p="EnemyStationary.cs" t="Include" />
           <e p="FPSCounter.cs" t="Include" />
+          <e p="Goal.cs" t="Include" />
           <e p="MoveScene.cs" t="Include" />
           <e p="PlayerMovementForce.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
+        </e>
+        <e p="Scripts_unused" t="Include">
           <e p="PlayerMovementVelocity.cs" t="Include" />
           <e p="ResetGame.cs" t="Include" />
-          <e p="UIManager.cs" t="Include" />
         </e>
       </e>
       <e p="Mario-Unity.sln" t="IncludeFlat" />

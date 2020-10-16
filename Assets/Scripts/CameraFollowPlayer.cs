@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CameraFollow : MonoBehaviour {
+public class CameraFollowPlayer : MonoBehaviour {
     public Transform followTransform;
 
     void FixedUpdate() {

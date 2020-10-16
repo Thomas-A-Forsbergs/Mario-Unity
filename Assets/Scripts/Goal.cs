@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Collect : MonoBehaviour {
+public class Goal : MonoBehaviour {
     public int scoreCount = 0;
     public Text scoreText;
 

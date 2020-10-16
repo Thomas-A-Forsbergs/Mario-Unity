@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EnemyMobile : MonoBehaviour
@@ -18,10 +15,6 @@ public class EnemyMobile : MonoBehaviour
     void Update()
     {
         
-    }
-    
-    public void OnTriggerEnter2D(Collider2D other) {
-        SceneManager.LoadScene("Defeat");
     }
 
     void OnCollisionEnter2D(Collision2D other) {
