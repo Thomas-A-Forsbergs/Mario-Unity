@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2632ac7a891e7e9448b61a41addf1b7b, type: 3}
-  m_Color: {r: 0, g: 0.29411766, b: 0.50980395, a: 1}
+  m_Color: {r: 0.50980395, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -113,6 +113,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948c897b09a5a4f478b22796148271df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementAcceleration: 25
+  maxSpeed: 2
+  playerManagerGameObject: {fileID: 0}
+  playerManager: {fileID: 0}
 --- !u!50 &6744522413116407411
 Rigidbody2D:
   serializedVersion: 4

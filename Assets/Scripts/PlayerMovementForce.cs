@@ -15,12 +15,11 @@ public class PlayerMovementForce : MonoBehaviour {
     bool isPlayerGrounded = false;
     public Transform isGroundedCheckerLeft;
     public Transform isGroundedCheckerRight;
-    public float checkGroundRadius;
     public float rememberGroundedFor;
     float lastTimeGrounded;
     public LayerMask groundLayer;
 
-    
+
     bool isPlayerAlive = true;
 
     void Start() {
@@ -32,11 +31,7 @@ public class PlayerMovementForce : MonoBehaviour {
         Jump();
         CheckIfGrounded();
         IsPlayerAlive();
-    }
-
-    void FixedUpdate() {
-        //Movement();
-        //Jump();
+        PlayerClassicJump();
     }
 
     void Movement() {

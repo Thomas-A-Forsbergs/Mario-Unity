@@ -22,6 +22,7 @@
           <e p="FPSCounter.cs" t="Include" />
           <e p="Goal.cs" t="Include" />
           <e p="MoveScene.cs" t="Include" />
+          <e p="PlayerManager.cs" t="Include" />
           <e p="PlayerMovementForce.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
         </e>

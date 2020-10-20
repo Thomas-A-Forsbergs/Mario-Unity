@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 529375918595293309}
   - component: {fileID: 529375918595293310}
   m_Layer: 0
-  m_Name: Flag
+  m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b33586d516a976479c3f7b83492ac6b, type: 3}
-  m_Color: {r: 0.50980395, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.29411766, b: 0.50980395, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -122,5 +122,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004284e9853189b4e9126eafa0e89e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreCount: 0
-  scoreText: {fileID: 0}

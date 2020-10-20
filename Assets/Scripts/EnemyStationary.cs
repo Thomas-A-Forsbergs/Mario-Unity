@@ -1,23 +1,21 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class EnemyStationary : MonoBehaviour
-{
-    bool isPlayerAlive = true;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class EnemyStationary : MonoBehaviour {
+
+    public GameObject playerManagerGameObject;
+    public PlayerManager playerManager;
+
+    public EnemyStationary(GameObject playerManagerGameObject) {
+        this.playerManagerGameObject = playerManagerGameObject;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Start() {
+        playerManager = playerManagerGameObject.GetComponent<PlayerManager>();
     }
-    
+
     void OnTriggerEnter2D(Collider2D other) {
-        SceneManager.LoadScene("Defeat");
+        if (other.gameObject.CompareTag("Player")) {
+            playerManager.playerLives--;
+        }
     }
 }

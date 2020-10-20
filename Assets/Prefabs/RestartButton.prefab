@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9146483706288259888}
   - component: {fileID: 9146483706288259889}
   m_Layer: 5
-  m_Name: Restart button
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735eaf7197d6f4944ab7cf9a7999ddc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveScene: {fileID: 9146483706288259888}
+  moveScene: {fileID: 0}
 --- !u!1 &9146483706620993515
 GameObject:
   m_ObjectHideFlags: 0

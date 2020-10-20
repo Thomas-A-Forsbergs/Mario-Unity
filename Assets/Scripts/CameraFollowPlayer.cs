@@ -6,6 +6,6 @@ public class CameraFollowPlayer : MonoBehaviour {
     void FixedUpdate() {
         var position = followTransform.position;
         this.transform.position = new Vector3(
-            position.x, position.y+2, -1);
+            position.x, position.y+4, -1);
     }
 }
