@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61c2a819-bb5d-4f37-bc65-cc049b736a5c" name="Default Changelist" comment="" />
+    <list default="true" id="61c2a819-bb5d-4f37-bc65-cc049b736a5c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mario-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mario-Unity/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,6 +108,7 @@
       <workItem from="1602749802198" duration="25118000" />
       <workItem from="1602838942755" duration="28052000" />
       <workItem from="1602879759940" duration="605000" />
+      <workItem from="1605175441492" duration="1391000" />
     </task>
     <servers />
   </component>
