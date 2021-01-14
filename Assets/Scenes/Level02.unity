@@ -170,6 +170,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1366315642979728287, guid: eeb76d3bbd007244b8f80354b53dd911, type: 3}
+      propertyPath: livesText
+      value: 
+      objectReference: {fileID: 633475511}
     - target: {fileID: 3318764175232347441, guid: eeb76d3bbd007244b8f80354b53dd911, type: 3}
       propertyPath: m_Name
       value: Player
@@ -225,6 +229,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3318764176239276211, guid: eeb76d3bbd007244b8f80354b53dd911, type: 3}
   m_PrefabInstance: {fileID: 315607631}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &315607633 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1366315642979728287, guid: eeb76d3bbd007244b8f80354b53dd911, type: 3}
+  m_PrefabInstance: {fileID: 315607631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315607634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee587796a6a1aca429bf67a98c58b08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &315607634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3318764175232347441, guid: eeb76d3bbd007244b8f80354b53dd911, type: 3}
+  m_PrefabInstance: {fileID: 315607631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &442566117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -235,11 +255,11 @@ PrefabInstance:
     - target: {fileID: 5675597947421808919, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: playerManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607633}
     - target: {fileID: 5675597947421808919, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: playerManagerGameObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607634}
     - target: {fileID: 8651840081804511821, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: m_Name
       value: EnemyStationary-Oxtagon2
@@ -357,11 +377,11 @@ PrefabInstance:
     - target: {fileID: 5900155220915295916, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
       propertyPath: playerManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607633}
     - target: {fileID: 5900155220915295916, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
       propertyPath: playerManagerGameObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607634}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
 --- !u!4 &521975206 stripped
@@ -431,11 +451,11 @@ PrefabInstance:
     - target: {fileID: 5900155220915295916, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
       propertyPath: playerManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607633}
     - target: {fileID: 5900155220915295916, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
       propertyPath: playerManagerGameObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607634}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
 --- !u!4 &579021608 stripped
@@ -559,11 +579,11 @@ PrefabInstance:
     - target: {fileID: 5675597947421808919, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: playerManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607633}
     - target: {fileID: 5675597947421808919, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: playerManagerGameObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607634}
     - target: {fileID: 8651840081804511821, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: m_Name
       value: EnemyStationary-Oxtagon3
@@ -866,11 +886,11 @@ PrefabInstance:
     - target: {fileID: 5900155220915295916, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
       propertyPath: playerManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607633}
     - target: {fileID: 5900155220915295916, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
       propertyPath: playerManagerGameObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607634}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
 --- !u!4 &1139368954 stripped
@@ -1016,11 +1036,11 @@ PrefabInstance:
     - target: {fileID: 5675597947421808919, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: playerManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607633}
     - target: {fileID: 5675597947421808919, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: playerManagerGameObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607634}
     - target: {fileID: 8651840081804511821, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: m_Name
       value: EnemyStationary-Oxtagon4
@@ -1270,11 +1290,11 @@ PrefabInstance:
     - target: {fileID: 5900155220915295916, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
       propertyPath: playerManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607633}
     - target: {fileID: 5900155220915295916, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
       propertyPath: playerManagerGameObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607634}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa76b8171cca4394d941d7751f2fbfef, type: 3}
 --- !u!4 &1714793374 stripped
@@ -1292,11 +1312,11 @@ PrefabInstance:
     - target: {fileID: 5675597947421808919, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: playerManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607633}
     - target: {fileID: 5675597947421808919, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: playerManagerGameObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 315607634}
     - target: {fileID: 8651840081804511821, guid: 4a76bb0c3f8ab9f4faac3c746d97aaa7, type: 3}
       propertyPath: m_Name
       value: EnemyStationary-Oxtagon1
